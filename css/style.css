@@ -44,6 +44,7 @@
 				text-decoration:none;
 				padding:0.5em 1em;
 				border: 2px white solid;
+				border-radius: 4px;
 
 			}
 
@@ -312,13 +313,12 @@
 				outline: 40px #A8C67C solid;
 				margin-right: 40px;
 				margin-left: 40px;
+				margin-bottom: 40px;
 
 			}
 
 /* GRIGLIA FINALE */
-			
 			.grigliafinale{
-				margin-top: 10px;
 				margin-right: 50px;
 				margin-left: 50px;
 				max-width: 1920px;
@@ -333,114 +333,7 @@
 				grid-column: span 2;
 			}
 
-
-
-/*_________________BEVERAGES___________________*/
-
-/* HEADER */
-			.showcasebeverages{
-				max-width: 100%;
-				height: 400px;
-				background: url(img/headbeve2.jpg) no-repeat center center/cover;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: flex-end;
-				padding-bottom: 80px;
-				margin-bottom: 20px;
-			}
-
-/* FRASE menù */
-			.titolomenu {
-				font-size: 30px;
-				text-align: center;
-				color: #A8C67C;
-				font-weight: 300;
-			}
-			.frasemenu {
-				font-size: 15px;
-				text-align: center;
-				margin-top: -20px;
-			}
-
-
-/*GALLERIA IMMAGINI*/
-			.slidershow{
-			  width: 700px;
-			  height: 400px;
-			  overflow: hidden;
-
-			}
-			.middle{
-			  position: relative;
-			  margin-top: 250px;
-			  margin-bottom: -140px;
-			  /*top: 300%;*/
-			  left: 50%;
-			  transform: translate(-50%,-50%);
-			}
-			.navigation{
-			  position: absolute;
-			  bottom: 20px;
-			  left: 50%;
-			  transform: translateX(-50%);
-			  display: flex;
-			}
-
-/*lineette per cambiare immagini*/
-			.bar{
-			  width: 30px;
-			  height: 10px;
-			  border: 2px solid #fff;
-			  margin: 6px;
-			  cursor: pointer;
-			  transition: 0.4s;
-			}
-			.bar:hover{
-			  background: #fff;
-			}
-
-			input[name="r"]{
-			    position: absolute;
-			    visibility: hidden;
-			}
-
-			.slides{
-			  width: 500%;
-			  height: 100%;
-			  display: flex;
-			}
-
-			.slide{
-			  width: 20%;
-			  transition: 0.6s;
-			}
-
-			.slide img{
-				width: 40%;
-				height: auto;
-				padding-left: 31%;
-				max-width: 1000px;
-			}
-
-			#r1:checked ~ .s1{
-			  margin-left: 0;
-			}
-			#r2:checked ~ .s1{
-			  margin-left: -20%;
-			}
-			#r3:checked ~ .s1{
-			  margin-left: -40%;
-			}
-			#r4:checked ~ .s1{
-			  margin-left: -60%;
-			}
-			#r5:checked ~ .s1{
-			  margin-left: -80%;
-			}
-
 /*___________________________________________________*/
-
 
 /*_________________EVENTS___________________*/
 
@@ -627,9 +520,31 @@
 				margin-top: -20px;
 			}
 
+/*GALLERIA IMMAGINI*/
+			.slidershow{
+			  width: auto;
+			  height: auto;
+			  overflow: hidden;
+
+			}
+			.middle{
+			  position: absolute;
+			  margin-top: 20px;
+			  margin-bottom: 40px;
+			  left: 50%;
+			  transform: translate(-50%,0);
+			}
+			.navigation{
+			  position: absolute;
+			  bottom: 20px;
+			  left: 50%;
+			  transform: translateX(-50%);
+			  display: flex;
+			}
+
 
 /*lineette per cambiare immagini*/
-			.barmenu{
+			.bar{
 			  width: 20px;
 			  height: 10px;
 			  border: 2px solid #fff;
@@ -637,7 +552,7 @@
 			  cursor: pointer;
 			  transition: 0.4s;
 			}
-			.barmenu:hover{
+			.bar:hover{
 			  background: #fff;
 			}
 
@@ -646,18 +561,18 @@
 			    visibility: hidden;
 			}
 
-			.slidesmenu{
+			.slides{
 			  width: 500%;
 			  height: 100%;
 			  display: flex;
 			}
 
-			.slidemenu{
+			.slide{
 			  width: 20%;
 			  transition: 0.6s;
 			}
 
-			.slidemenu img{
+			.slide img{
 				width: 100%;
 				height: auto;
 				max-width: 1000px;
@@ -677,6 +592,36 @@
 			}
 			#r5:checked ~ .s1{
 			  margin-left: -80%;
+			}
+
+/*___________________________________________________*/
+
+/*_________________BEVERAGES___________________*/
+
+/* HEADER */
+			.showcasebeverages{
+				max-width: 100%;
+				height: 400px;
+				background: url(img/headbeve2.jpg) no-repeat center center/cover;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-end;
+				padding-bottom: 80px;
+				margin-bottom: 20px;
+			}
+
+/* FRASE menù */
+			.titolomenu {
+				font-size: 30px;
+				text-align: center;
+				color: #A8C67C;
+				font-weight: 300;
+			}
+			.frasemenu {
+				font-size: 15px;
+				text-align: center;
+				margin-top: -20px;
 			}
 
 /*___________________________________________________*/
