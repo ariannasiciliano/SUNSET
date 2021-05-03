@@ -55,6 +55,7 @@
 			}
 
 /*IMMAGINE NAV*/
+
 			.immnav{ 
 			width: 50px; 
 			height: 40px;
@@ -873,6 +874,13 @@
 				}
 			}
 
+			@media (max-width: 530px){
+
+			#navigation {
+			    font-size: 8px;
+				}
+			}
+
 /*CAMBIAMENTI RIDUZIONI GRIGLIA FINALE*/
 
 			@media (max-width: 650px){
@@ -892,11 +900,18 @@
 
 /*CAMBIAMENTI RIDUZIONI PER CELL*/
 
-@media (max-width: 500px){
+@media (max-width: 490px){
 
 			#navigation {
-			    font-size: 5px;
+			    font-size: 4px;
 				}
+
+			.immnav{ 
+			width: 25px; 
+			height: 20px;
+
+			}
+
 			.griglia{
 				margin-right: 20px;
 				margin-left: 20px;
