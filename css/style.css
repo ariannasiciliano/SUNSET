@@ -628,7 +628,7 @@
 
 
 /*lineette per cambiare immagini*/
-			.bar{
+			/*.bar{
 			  width: 20px;
 			  height: 10px;
 			  border: 2px solid #fff;
@@ -676,7 +676,7 @@
 			}
 			#r5:checked ~ .s1{
 			  margin-left: -80%;
-			}
+			}*/
 
 /*___________________________________________________*/
 
@@ -884,5 +884,21 @@
 			}
 			.cellafinale{
 				margin-bottom: 1em;
+			}
+			}
+
+
+/*___________________________________________________*/
+
+/*CAMBIAMENTI RIDUZIONI PER CELL*/
+
+@media (max-width: 500px){
+
+			#navigation {
+			    font-size: 5px;
+				}
+			.griglia{
+				margin-right: 20px;
+				margin-left: 20px;
 			}
 			}
