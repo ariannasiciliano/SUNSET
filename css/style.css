@@ -7,7 +7,8 @@
 			
 	}
 
-/* LOGO */
+
+/* SCRITTA SUNSET */
 			.logo{
 				margin-top: 10px;
 				margin-bottom: -20px;
@@ -16,16 +17,19 @@
 				color: #A8C67C;
 			}
 
-/* LOGO NELLA NAV */
-			#logoimm{
-				position: relative;
-				top: 12px;
+			.sottotitolo{
+				margin-top: 20px;
+				margin-bottom: -20px;
+				font-size: 20px;
+				text-align: center;
+				color: #A8C67C;
 			}
 
-/* BARRA NAVIGAZIONE */
+/* NAV */
 			#navigation {
 			    padding-top:0em;
 			    margin-bottom: 2em;
+			    border-radius: 4px;
 			}
 
 			#navigation ul {
@@ -39,7 +43,7 @@
 			}
 
 			#navigation ul li a {
-				background: #A8C67C;
+				background: white;
 				color:black;
 				text-decoration:none;
 				padding:0.5em 1em;
@@ -48,18 +52,22 @@
 			}
 
 			#navigation ul li a:hover {
-				color: #A8C67C;
-				background:#FFFFFF;
+				color: black;
+				background:#A8C67C;
 				border: 2px #A8C67C solid;
+				border-radius: 4px;
 
 			}
 
 /*IMMAGINE NAV*/
+			#logoimm{
+				position: relative;
+				top: 12px;
+			}
 
 			.immnav{ 
 			width: 50px; 
 			height: 40px;
-
 			}
 
 /* HEADER */
@@ -76,7 +84,6 @@
 			}
 
 /* GRIGLIA */
-			
 			.griglia{
 				margin-top: 10px;
 				margin-right: 100px;
@@ -127,7 +134,6 @@
 			}
 
 			.cellapic{
-			/*	outline: 1px red solid;*/
 				min-height: 5em;
 
 			}
@@ -138,18 +144,17 @@
 				width: 100%;
 				height: auto;
 				height: auto;
-				max-width: 1000px;
-				
+				max-width: 1000px;	
 			}
 
 /* BOTTONI GRIGLIA CORTO (Find us) */
 			#bottonigriglia {
 			    padding-top:0em;
 			    margin-bottom: 0em;
+			    margin-top: -10px;
 			}
 
 			#bottonigriglia ul {
-			    /*text-align:center;*/
 			    padding:0.5em 0;
 			}
 
@@ -158,18 +163,18 @@
 			}
 
 			#bottonigriglia ul li a {
-				background: #A8C67C;
-				color:black;
+				background: white;
+				color:#A8C67C;
 				text-decoration:none;
 				padding:0.5em 1em;
 				transition: all .3s;
 				border-radius: 4px;
-				border: 2px white solid;
+				border: 2px #A8C67C solid;
 			}
 
 			#bottonigriglia ul li a:hover {
-				color: #A8C67C;
-				background:#FFFFFF;
+				color: black;
+				background:#A8C67C;
 				border: 2px #A8C67C solid;
 				border-radius: 4px;
 			}
@@ -178,6 +183,7 @@
 			#bottonigriglialung {
 			    padding-top:0em;
 			    margin-bottom: 0em;
+			    margin-top: -10px;
 			}
 
 			#bottonigriglialung ul {
@@ -190,18 +196,18 @@
 			}
 
 			#bottonigriglialung ul li a {
-				background: #A8C67C;
-				color:black;
+				background: white;
+				color:#A8C67C;
 				text-decoration:none;
 				padding:0.5em 1em;
 				transition: all .3s;
 				border-radius: 4px;
-				border: 2px white solid;
+				border: 2px #A8C67C solid;
 			}
 
 			#bottonigriglialung ul li a:hover {
-				color: #A8C67C;
-				background:#FFFFFF;
+				color: black;
+				background:#A8C67C;
 				border: 2px #A8C67C solid;
 				border-radius: 4px;
 			}
@@ -257,30 +263,27 @@
 /* RISERVATION */
 			.riservation{
 				max-width: 100%;
-				height: 400px;
+				height: 200px;
 				background: url(img/riservation.jpg) no-repeat center center/cover;
 				display: flex;
 				flex-direction: column;
-				align-items: center;
-				justify-content: flex-end;
 				padding-bottom: 80px;
 				margin-bottom: 0px;
 			}
 
 /* BOTTONI RISERVATION */
 			#navigationriservation {
-			    padding-top:0em;
-			    margin-bottom: 2em;
+			padding-top:0em;
+			margin-top: -10px;
 			}
 
 			#navigationriservation ul {
-			    text-align:center;
-			    padding:0.5em 0;
+			padding:0.5em 0;
 			}
 
 			#navigationriservation ul li {
-			    display:inline;
-			    margin-right:0.5em;
+			display:inline;
+		
 			}
 
 			#navigationriservation ul li a {
@@ -296,16 +299,8 @@
 			#navigationriservation ul li a:hover {
 				color: #A8C67C;
 				background:white;
-				border: 2px #FFFFFF solid;
+				border: 2px #A8C67C solid;
 				border-radius: 4px;
-			}
-
-
-			input {
-				margin: 0;
-				width:10em;
-				text-align:center;
-				display: inline;
 			}
 
 /* BOX FINALE */
@@ -329,11 +324,8 @@
 				margin-bottom: 2em;
 			}
 			.doppiafinale{
-				/*outline: 1px red solid;*/
 				grid-column: span 2;
 			}
-
-
 
 /*_________________BEVERAGES___________________*/
 
@@ -351,7 +343,7 @@
 			}
 
 /* FRASE menù */
-			.titolomenu {
+			.titolo {
 				font-size: 30px;
 				text-align: center;
 				color: #A8C67C;
@@ -362,84 +354,6 @@
 				text-align: center;
 				margin-top: -20px;
 			}
-
-
-/*GALLERIA IMMAGINI*/
-			.slidershow{
-			  width: 700px;
-			  height: 400px;
-			  overflow: hidden;
-
-			}
-			.middle{
-			  position: relative;
-			  margin-top: 250px;
-			  margin-bottom: -140px;
-			  /*top: 300%;*/
-			  left: 50%;
-			  transform: translate(-50%,-50%);
-			}
-			.navigation{
-			  position: absolute;
-			  bottom: 20px;
-			  left: 50%;
-			  transform: translateX(-50%);
-			  display: flex;
-			}
-
-/*lineette per cambiare immagini*/
-			.bar{
-			  width: 30px;
-			  height: 10px;
-			  border: 2px solid #fff;
-			  margin: 6px;
-			  cursor: pointer;
-			  transition: 0.4s;
-			}
-			.bar:hover{
-			  background: #fff;
-			}
-
-			input[name="r"]{
-			    position: absolute;
-			    visibility: hidden;
-			}
-
-			.slides{
-			  width: 500%;
-			  height: 100%;
-			  display: flex;
-			}
-
-			.slide{
-			  width: 20%;
-			  transition: 0.6s;
-			}
-
-			.slide img{
-				width: 40%;
-				height: auto;
-				padding-left: 31%;
-				max-width: 1000px;
-			}
-
-			#r1:checked ~ .s1{
-			  margin-left: 0;
-			}
-			#r2:checked ~ .s1{
-			  margin-left: -20%;
-			}
-			#r3:checked ~ .s1{
-			  margin-left: -40%;
-			}
-			#r4:checked ~ .s1{
-			  margin-left: -60%;
-			}
-			#r5:checked ~ .s1{
-			  margin-left: -80%;
-			}
-
-/*___________________________________________________*/
 
 
 /*_________________EVENTS___________________*/
@@ -458,7 +372,7 @@
 			}
 
 /* FRASE*/
-			.titoloevents {
+			.fraseevents {
 				font-size: 20px;
 				margin-top: 10px;
 				margin-bottom: 0px;
@@ -467,7 +381,6 @@
 			}
 
 /*PARTE DOVE SCRIVERE*/
-
 			.contact-form{
 			  display: flex;
 			  justify-content: space-between;
@@ -510,27 +423,21 @@
 			}
 
 			#bottoneevents ul li a {
-				background: #A8C67C;
-				color:white;
+				background: white;
+				color:#A8C67C;
 				text-decoration:none;
 				padding:0.5em 1em;
 				transition: all .3s;
 				border-radius: 4px;
-				border: 2px white solid;
-
+				border: 2px #A8C67C solid;
 			}
 
 			#bottoneevents ul li a:hover {
-				color: #A8C67C;
-				background: white;
+				color: black;
+				background: #A8C67C;
 				border: 2px #A8C67C solid;
 				border-radius: 4px;
 			}
-
-
-
-
-/*___________________________________________________*/
 
 
 /*_________________FINDUS___________________*/
@@ -554,17 +461,9 @@
 				max-width: 1000px;	
 			}
 
-/* FRASE*/
-			.titolofindus {
-				font-size: 30px;
-				margin-top: 10px;
-				margin-bottom: 0px;
-				color: #A8C67C;
-				font-weight: 300;
-			}
 
 /*BOTTONE*/
-			#bottonefindusfindus {
+			#bottonefindus {
 			    padding-top:0em;
 			    margin-bottom: 40px;
 			}
@@ -586,7 +485,6 @@
 				transition: all .3s;
 				border-radius: 4px;
 				border: 2px white solid;
-
 			}
 
 			#bottonefindus ul li a:hover {
@@ -595,9 +493,6 @@
 				border: 2px #A8C67C solid;
 				border-radius: 4px;
 			}
-
-
-/*___________________________________________________*/
 
 
 /*_________________MENU APPETIZER___________________*/
@@ -615,71 +510,12 @@
 			}
 
 /* FRASE menù */
-			.titolomenu {
-				font-size: 30px;
-				text-align: center;
-				color: #A8C67C;
-				font-weight: 300;
-			}
 			.frasemenu {
 				font-size: 15px;
 				text-align: center;
 				margin-top: -20px;
 			}
 
-
-/*lineette per cambiare immagini*/
-			/*.bar{
-			  width: 20px;
-			  height: 10px;
-			  border: 2px solid #fff;
-			  margin: 6px;
-			  cursor: pointer;
-			  transition: 0.4s;
-			}
-			.bar:hover{
-			  background: #fff;
-			}
-
-			input[name="r"]{
-			    position: absolute;
-			    visibility: hidden;
-			}
-
-			.slides{
-			  width: 500%;
-			  height: 100%;
-			  display: flex;
-			}
-
-			.slide{
-			  width: 20%;
-			  transition: 0.6s;
-			}
-
-			.slide img{
-				width: 100%;
-				height: auto;
-				max-width: 1000px;
-			}
-
-			#r1:checked ~ .s1{
-			  margin-left: 0;
-			}
-			#r2:checked ~ .s1{
-			  margin-left: -20%;
-			}
-			#r3:checked ~ .s1{
-			  margin-left: -40%;
-			}
-			#r4:checked ~ .s1{
-			  margin-left: -60%;
-			}
-			#r5:checked ~ .s1{
-			  margin-left: -80%;
-			}*/
-
-/*___________________________________________________*/
 
 /*_________________RESERVATION___________________*/
 
@@ -695,101 +531,92 @@
 				padding-bottom: 80px;
 				margin-bottom: 20px;
 			}
-
-/*TITOLO RESERVATION*/
-			.titoloreservation{
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: flex-end;
-			}
+			
 
 /*PARTE CON ORARI E GIORNI*/
-	.container-time {
-		background-color: #A8C67C;
-		padding-left: 20px;
-		padding-right: 20px;
-		padding-top: 50px;
-		padding-bottom: 50px;
-		text-align: center;
-		color:white;
-	}
+			.container-time {
+				background-color: #A8C67C;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-top: 50px;
+				padding-bottom: 50px;
+				text-align: center;
+				color:white;
+			}
 
-	.heading {
-		font-size: 35px;
-		text-transform: uppercase;
-		color:#708452;
-	}
+			.heading {
+				font-size: 35px;
+				text-transform: uppercase;
+				color:#708452;
+			}
 
-	.heading-days {
-		color:#708452;
-		font-size: 20px;
-	}
+			.heading-days {
+				color:#708452;
+				font-size: 20px;
+			}
 
-	.heading-phone {
-		color:#708452;
-		font-size: 20px;
-	}
+			.heading-phone {
+				color:#708452;
+				font-size: 20px;
+			}
 
 
 /*PARTE DA COMPILARE*/
 
-	.container {
-		background-color: white;
-		border: 2px #A8C67C solid;
-		margin-left: 100px;
-		margin-right: 100px;
-		display: grid;
-		grid-template-columns: 40% 60%;
+			.container {
+				background-color: white;
+				border: 2px #A8C67C solid;
+				margin-left: 100px;
+				margin-right: 100px;
+				display: grid;
+				grid-template-columns: 40% 60%;
 
-	}
+			}
 
-	.container-form {
-		padding: 20px 0;
-		margin: 0 auto;
-		color: #000;
-	}
+			.container-form {
+				padding: 20px 0;
+				margin: 0 auto;
+				color: #000;
+				width: 60%;
+			}
 
-	form {
-		display: grid;
-		grid-row-gap: 20px;
-	}
+			form {
+				display: grid;
+				grid-row-gap: 20px;
+			}
 
-	form p {
-	color: black;
-	}
+			form p {
+			color: black;
+			}
 
-	.form-field {
-		display: flex;
-		justify-content: space-between;
-	}
+			.form-field {
+				display: flex;
+				justify-content: space-between;
+			}
 
-	input,select {
-		padding: 10px 20px;
-		border: 2px #A8C67C solid;
-	}
+			input,select {
+				padding: 10px 20px;
+				border: 2px #A8C67C solid;
+			}
 
-	.btn {
-		background-color: #A8C67C;
-		color: #fff;
-		padding: 10px 20px;
-		border: none;
-		font-size: 18px;
-		cursor: pointer;
-		transition: all .3s;
-		border-radius: 4px;
-		border: 2px white solid;
-	}
+			.btn {
+				background-color: #A8C67C;
+				color: #fff;
+				padding: 10px 20px;
+				border: none;
+				font-size: 18px;
+				cursor: pointer;
+				transition: all .3s;
+				border-radius: 4px;
+				border: 2px white solid;
+			}
 
-	.btn:hover {
-		color: #A8C67C;
-		background:white;
-		border: 2px #A8C67C solid;
-		
-	}
-
-/*___________________________________________________*/
-
+			.btn:hover {
+				color: #A8C67C;
+				background:white;
+				border: 2px #A8C67C solid;
+				
+			}
 
 /*CAMBIAMENTI RIDUZIONI NAV*/
 
@@ -826,6 +653,8 @@
 			#navigation {
 			    font-size: 12px;
 				}
+			.container-form {
+			width: 80%;}
 			}
 
 			@media (max-width: 700px){
@@ -850,17 +679,11 @@
 				font-size: 15px;
 				border: 1px #A8C67C solid
 				}
-			#bottoneasporto ul li a:hover {
-				border: 1px #FFFFFF solid;
-				}
 
 			#bottonigriglialung ul li a {
 				padding:0.5em 0.7em;
 				font-size: 15px;
 				border: 1px #FFFFFF solid
-				}
-			#bottonigriglialung ul li a:hover {
-				border: 1px #A8C67C solid;
 				}
 
 			p {
@@ -872,6 +695,28 @@
 			#navigation {
 			    font-size: 9px;
 				}
+
+			#bottonigriglia ul li a {
+				padding:0.5em 0.7em;
+				font-size: 13px;
+				border: 1px #A8C67C solid
+				}
+			
+
+			#bottonigriglialung ul li a {
+				padding:0.5em 0.7em;
+				font-size: 13px;
+				border: 1px #A8C67C solid
+				}
+			
+
+			#bottoneasporto ul li a {
+				padding:0.5em 0.7em;
+				font-size: 13px;
+				border: 1px #A8C67C solid
+				}
+			
+			
 			}
 
 			@media (max-width: 530px){
@@ -893,6 +738,10 @@
 			.cellafinale{
 				margin-bottom: 1em;
 			}
+
+			.container-form {
+			width: 90%;
+			}
 			}
 
 
@@ -903,12 +752,12 @@
 @media (max-width: 490px){
 
 			#navigation {
-			    font-size: 2px;
+			    font-size: 6px;
 				}
 
 			.immnav{ 
-			width: 25px; 
-			height: 20px;
+			width: 38px; 
+			height: 33px;
 
 			}
 
@@ -916,4 +765,49 @@
 				margin-right: 20px;
 				margin-left: 20px;
 			}
+
+			.container {
+				margin-left: 20px;
+				margin-right: 20px;
+				display: grid;
+				grid-template-columns: 40% 60%;
+
 			}
+
+			input,select {
+				padding: 10px 10px;
+			}
+
+			.heading {
+				font-size: 25px;
+			}
+
+			.heading-days {
+				font-size: 10px;
+			}
+
+			.heading-phone {
+				font-size: 10px;
+			}
+
+			.showcaseindex{
+				height: 150px;
+			}
+			.showcasebeverages{
+				height: 150px;
+			}
+			.showcasevents{
+				height: 150px;
+			}
+			.showcasefindus{
+				height: 150px;
+			}
+			.showcasemenu{
+				height: 150px;
+			}
+			.showcasereservation{
+				height: 150px;
+			}
+
+
+		}
