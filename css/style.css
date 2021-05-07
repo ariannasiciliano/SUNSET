@@ -74,7 +74,7 @@
 			.showcaseindex{
 				max-width: 100%;
 				height: 400px;
-				background: url(img/tramonto.jpg) no-repeat center center/cover;
+				background: url(img/index.jpg) no-repeat center center/cover;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -141,10 +141,18 @@
 
 /* IMMAGINI RESPONSIVE */
 			.responsive {
+				width: 70%;
+				height: auto;
+				height: auto;
+				max-width: 800px;	
+			}
+
+/* IMMAGINI RESPONSIVE */
+			.responsivemen {
 				width: 100%;
 				height: auto;
 				height: auto;
-				max-width: 1000px;	
+				max-width: 800px;	
 			}
 
 /* BOTTONI GRIGLIA CORTO (Find us) */
@@ -807,6 +815,10 @@
 			}
 			.showcasereservation{
 				height: 150px;
+			}
+
+			.frasecit {
+				font-size: 20px;
 			}
 
 
