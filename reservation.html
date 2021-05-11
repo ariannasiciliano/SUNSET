@@ -4,6 +4,10 @@
 	<meta charset="utf-8">
 	<title>Sunset</title>
 
+	<!-- AGGIUNTA PER NAV BAR-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 
@@ -14,21 +18,25 @@
 
 <!-- Logo -->
 <div>
-			<p class="logo"> SUNSET </p>
+			<p class="sunset"> SUNSET </p>
 			<p class="sottotitolo"> <strong> The seaside restaurant </strong></p>
 </div>
 <!-- Nav -->
-<div id="navigation">
-  <ul>
-    <li><a href="index.html" title="Home">HOME</a></li>
-    <li><a href="menu.html" title="Appetizer">APPETIZER</a></li>
-    <li><a href="beverages.html" title="Beverages">BEVERAGES</a></li>
-    <li id="logoimm"><img class="immnav" src="img/logo.png"></li>
-    <li><a href="findus.html" title="Find us">FIND US</a></li>
-    <li><a href="reservation.html" title="Reservation">RESERVATION</a></li>
-    <li><a href="events.html" title="Events">EVENTS</a></li>
-  </ul>
-</div>
+<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="index.html" title="Home">HOME</a></li>
+        <li><a href="menu.html" title="Appetizer">APPETIZER</a></li>
+        <li><a href="beverages.html" title="Beverages">BEVERAGES</a></li>
+       	<li id="logoimm"><img class="immnav" src="img/logo.png"></li>
+        <li><a href="findus.html" title="Find us">FIND US</a></li>
+        <li><a href="reservation.html" title="Reservation">RESERVATION</a></li>
+        <li><a href="events.html" title="Events">EVENTS</a></li>
+      </ul>
+    </nav>
 
 
 <!-- Header -->
@@ -36,13 +44,13 @@
 	</header>
 
 <!-- Reservation -->
-		<p class="titolo" style="color:#A8C67C;font-size: 30px;">Reservations</p>
+<p class="titolo" style="color:#A8C67C;font-size: 30px;margin-bottom: 25px;">Reservations</p>
 	
 <div class="container">
 <div class="container-time">
 <h2 class="heading">Time Open</h2>
 <p class="heading-days">Monday-Sunday</p>
-<p>12pm - 11pm</p>
+<p style="margin-bottom:10px;">12pm - 11pm</p>
 
 <hr>
 
@@ -88,7 +96,7 @@
 <br>
 
 <!-- Finale -->
-<section id="boxfinale">
+<div id="boxfinale">
 	<p style="color:#A8C67C; text-align: center; font-size: 30px;"><br>Hungry?</p>
 
 	<div class="grigliafinale">
@@ -105,7 +113,7 @@
 			<p style="color:#A8C67C; text-align: center; margin-top: 0px;; font-size: 12px;">Tel: +1 786-975-2550<br>Email: sunset@1.com</p> <br>	
 		</div>
 	</div>
-</section>
+</div>
 
 
 </body>

@@ -4,6 +4,10 @@
 	<meta charset="utf-8">
 	<title>Sunset</title>
 
+	<!-- AGGIUNTA PER NAV BAR-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 
@@ -14,21 +18,25 @@
 
 <!-- Logo -->
 <div>
-			<p class="logo"> SUNSET </p>
+			<p class="sunset"> SUNSET </p>
 			<p class="sottotitolo"> <strong> The seaside restaurant </strong></p>
 </div>
 <!-- Nav -->
-<div id="navigation">
-  <ul>
-    <li><a href="index.html" title="Home">HOME</a></li>
-    <li><a href="menu.html" title="Appetizer">APPETIZER</a></li>
-    <li><a href="beverages.html" title="Beverages">BEVERAGES</a></li>
-    <li id="logoimm"><img class="immnav" src="img/logo.png"></li>
-    <li><a href="findus.html" title="Find us">FIND US</a></li>
-    <li><a href="reservation.html" title="Reservation">RESERVATION</a></li>
-    <li><a href="events.html" title="Events">EVENTS</a></li>
-  </ul>
-</div>
+<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="index.html" title="Home">HOME</a></li>
+        <li><a href="menu.html" title="Appetizer">APPETIZER</a></li>
+        <li><a href="beverages.html" title="Beverages">BEVERAGES</a></li>
+        <li id="logoimm"><img class="immnav" src="img/logo.png"></li>
+        <li><a href="findus.html" title="Find us">FIND US</a></li>
+        <li><a href="reservation.html" title="Reservation">RESERVATION</a></li>
+        <li><a href="events.html" title="Events">EVENTS</a></li>
+      </ul>
+    </nav>
 
 
 <!-- Header -->
@@ -38,11 +46,11 @@
 <!-- Frase menu -->
 <div>
 			<h3 class="titolo"> Thirsty? </h3>
-			<p class="frasemenu">Enjoy your favorite drink at any time.</p>
+			<p class="frasemenu" style="margin-top:5px;" >Enjoy your favorite drink at any time.</p>
 </div>
 
 <!-- Griglia -->
-<section>
+<div>
 <div class="griglia">
 
 	<div class="sei">
@@ -52,14 +60,14 @@
 
 
 
-</section>
+</div>
 
 <!-- Asporto -->
-<section id="boxasporto">
+<div id="boxasporto">
 	<div class="griglia">
 
 		<div class="tripla">
-			<p style="color:white;text-align: right;font-size: 25px;">GREENS JUST GOT FASTER!</p>
+			<p style="color:white;text-align: right;font-size: 25px;margin-top: 25px;">GREENS JUST GOT FASTER!</p>
 			<div id="bottoneasporto">
 				<ul><li><a href="https://deliveroo.it/it?utm_source=google&utm_medium=cpc&utm_term=deliveroo&utm_campaign=%2A%2A%5EAcquisition%5ESearch%5EBrand%5EItaly%5EAll%20Cities%5E%5EExact%5EAPI%5E%5E%5E%5E%5EIT%5EStrategic%5ENon-Mobile%5E£10274500698&utm_loc=1008250&utm_device=c&utm_adposition=&utm_network=g&utm_targetid=kwd-52577441545&gclid=EAIaIQobChMIhJv6gN7J7wIVmYbVCh2JpgGSEAAYASAAEgJTJ_D_BwE&gclsrc=aw.ds" title="Order online">ORDER ONLINE</a></li></ul>
 			</div>
@@ -69,11 +77,11 @@
 			<img style="padding-top: 30px;" class="responsive" src="img/biciasporto.png">
 		</div>
 	</div>
-</section>
+</div>
 
 
 <!-- Finale -->
-<section id="boxfinale">
+<div id="boxfinale">
 	<p style="color:#A8C67C; text-align: center; font-size: 30px;"><br>Hungry?</p>
 
 	<div class="grigliafinale">
@@ -90,7 +98,7 @@
 			<p style="color:#A8C67C; text-align: center; margin-top: 0px;; font-size: 12px;">Tel: +1 786-975-2550<br>Email: sunset@1.com</p> <br>	
 		</div>
 	</div>
-</section>
+</div>
 
 
 

@@ -3,13 +3,12 @@
 		margin: 0px;
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 300;
-		background-color: white;
-			
+		background-color: white;	
 	}
 
 
 /* SCRITTA SUNSET */
-			.logo{
+			.sunset{
 				margin-top: 10px;
 				margin-bottom: -20px;
 				font-size: 50px;
@@ -26,48 +25,70 @@
 			}
 
 /* NAV */
-			#navigation {
-			    padding-top:0em;
-			    margin-bottom: 2em;
-			    border-radius: 4px;
+			.immnav{ 
+			width: 50px; 
+			height: 40px;
 			}
 
-			#navigation ul {
-			    text-align:center;
-			    padding:0.5em 0;
-			}
-
-			#navigation ul li {
-			    display:inline;
-			    margin-right:0.5em;
-			}
-
-			#navigation ul li a {
-				background: white;
-				color:black;
-				text-decoration:none;
-				padding:0.5em 1em;
-				border: 2px white solid;
-
-			}
-
-			#navigation ul li a:hover {
-				color: black;
-				background:#A8C67C;
-				border: 2px #A8C67C solid;
-				border-radius: 4px;
-
-			}
-
-/*IMMAGINE NAV*/
 			#logoimm{
 				position: relative;
 				top: 12px;
 			}
 
-			.immnav{ 
-			width: 50px; 
-			height: 40px;
+			*{
+			  padding: 0;
+			  margin: 0;
+			  text-decoration: none;
+			  list-style: none;
+			  box-sizing: border-box;
+			}
+
+			nav{
+			  margin-top: 25px;
+			  margin-bottom: 20px;
+			  background: white;
+			  height: 60px;
+			  width: 100%;
+			}
+
+			nav ul{
+			  text-align:center;
+			}
+			nav ul li{
+			  display: inline-block;
+			  line-height: 60px;
+
+			}
+			nav ul li a{
+			  color: #A8C67C;
+			  font-size: 17px;
+			  padding: 7px 13px;
+			  border-radius: 4px;
+			}
+
+			a.active,a:hover{
+			  background: #A8C67C;
+			  color: white;
+			  transition: .5s;
+			}
+
+			.checkbtn{
+			  font-size: 30px;
+			  color: #A8C67C;
+			  float: right;
+			  line-height: 60px;
+			  margin-right: 40px;
+			  cursor: pointer;
+			  display: none;
+			}
+			#check{
+			  display: none;
+			}
+
+			section{
+			  background: url(bg1.jpg) no-repeat;
+			  background-size: cover;
+			  height: calc(100vh - 80px);
 			}
 
 /* HEADER */
@@ -120,7 +141,6 @@
 				grid-column: span 6;
 			}
 
-
 /* GRIGLIA PICCOLA */
 			.grigliapic{
 				margin-top: 0px;
@@ -135,7 +155,6 @@
 
 			.cellapic{
 				min-height: 5em;
-
 			}
 
 
@@ -144,12 +163,15 @@
 				width: 70%;
 				height: auto;
 				height: auto;
-				max-width: 800px;	
+				max-width: 300px;
+				margin-top: 0px;	
 			}
 
-/* IMMAGINI RESPONSIVE */
 			.responsivemen {
 				width: 100%;
+				display: block;
+     			margin:0px auto;
+      			text-align:center;
 				height: auto;
 				height: auto;
 				max-width: 800px;	
@@ -158,8 +180,7 @@
 /* BOTTONI GRIGLIA CORTO (Find us) */
 			#bottonigriglia {
 			    padding-top:0em;
-			    margin-bottom: 0em;
-			    margin-top: -10px;
+			    margin-bottom: 7px;   
 			}
 
 			#bottonigriglia ul {
@@ -189,9 +210,8 @@
 
 /* BOTTONI GRIGLIA LUNGO (see our menù) */
 			#bottonigriglialung {
-			    padding-top:0em;
-			    margin-bottom: 0em;
-			    margin-top: -10px;
+				padding-top:0em;
+			    margin-bottom: 7px;  
 			}
 
 			#bottonigriglialung ul {
@@ -230,8 +250,8 @@
 
 /* BOTTONI ASPORTO */
 			#bottoneasporto {
-			    padding-top:0em;
-			    margin-bottom: 0em;
+			    margin-top:15px;
+
 			}
 
 			#bottoneasporto ul {
@@ -262,6 +282,8 @@
 
 /* FRASE CITAZIONE */
 			.frasecit {
+				margin-top: 20px;
+				margin-bottom: 20px;
 				font-size: 30px;
 				text-align: center;
 				color: #A8C67C;
@@ -271,7 +293,7 @@
 /* RISERVATION */
 			.riservation{
 				max-width: 100%;
-				height: 200px;
+				height: 270px;
 				background: url(img/riservation.jpg) no-repeat center center/cover;
 				display: flex;
 				flex-direction: column;
@@ -281,8 +303,7 @@
 
 /* BOTTONI RISERVATION */
 			#navigationriservation {
-			padding-top:0em;
-			margin-top: -10px;
+			margin-top:15px;
 			}
 
 			#navigationriservation ul {
@@ -307,7 +328,7 @@
 			#navigationriservation ul li a:hover {
 				color: #A8C67C;
 				background:white;
-				border: 2px #A8C67C solid;
+				border: 2px white solid;
 				border-radius: 4px;
 			}
 
@@ -316,7 +337,6 @@
 				outline: 40px #A8C67C solid;
 				margin-right: 40px;
 				margin-left: 40px;
-
 			}
 
 /* GRIGLIA FINALE */
@@ -397,8 +417,8 @@
 
 			.contact-form input, .contact-form textarea{
 			  width: 100%;
-			  height: 20px;
-			  margin: 7px 0;
+			  height: 40px;
+			  margin: 8px 0;
 			  background-color: white;
 			  border: 2px #A8C67C solid;
 			  outline: none;
@@ -408,7 +428,7 @@
 			}
 
 			.nameZone, .emailZone{
-			  max-width: calc(50% - 27px);
+			  max-width: calc(50% - 10px);
 			}
 
 			.messageZone{
@@ -417,8 +437,7 @@
 			}
 /*bottone*/
 			#bottoneevents {
-			    margin-top:-25px;
-			    margin-bottom: -10px;
+			    margin-top:-5px;
 
 			}
 
@@ -472,8 +491,8 @@
 
 /*BOTTONE*/
 			#bottonefindus {
-			    padding-top:0em;
-			    margin-bottom: 40px;
+			    padding-top:8px;
+			    margin-bottom: 25px;
 			}
 
 			#bottonefindus ul {
@@ -561,11 +580,15 @@
 			.heading-days {
 				color:#708452;
 				font-size: 20px;
+				margin-top: 10px;
+				margin-bottom: 10px;
 			}
 
 			.heading-phone {
 				color:#708452;
 				font-size: 20px;
+				margin-top: 10px;
+				margin-bottom: 10px;
 			}
 
 
@@ -578,7 +601,6 @@
 				margin-right: 100px;
 				display: grid;
 				grid-template-columns: 40% 60%;
-
 			}
 
 			.container-form {
@@ -604,6 +626,7 @@
 
 			input,select {
 				padding: 10px 20px;
+				border-radius: 4px;
 				border: 2px #A8C67C solid;
 			}
 
@@ -622,65 +645,64 @@
 			.btn:hover {
 				color: #A8C67C;
 				background:white;
+				border-radius: 4px;
 				border: 2px #A8C67C solid;
 				
 			}
 
 /*CAMBIAMENTI RIDUZIONI NAV*/
-
-			@media (max-width: 900px){
-
-			#navigation {
-			    font-size: 15px;
-				}
+			@media (max-width: 952px){
+			  nav ul li a{
+			    font-size: 16px;
+			  }
 			}
-
-			@media (max-width: 850px){
-
-			#navigation {
-			    font-size: 14px;
-				}
+			@media (max-width: 800px){
+			  .checkbtn{
+			    display: block;
+			  }
+			  nav ul li a{
+			  color: white;
 			}
+			  nav ul{
+			    position: fixed;
+			    width: 100%;
+			    height: 100vh;
+			    background: #A8C67C;
+			    color: white;
+			    top: 160px;
+			    left: -100%;
+			    text-align: center;
+			    transition: all .5s;
+			  }
+			  nav ul li{
+			    display: block;
+			    margin: 50px 0;
+			    line-height: 22px;
+			  }
+			  nav ul li a{
+			    font-size: 20px;
+			  }
+			  a:hover,a.active{
+			    background: white;
+			    color: #A8C67C;
+			  }
+			  #check:checked ~ ul{
+			    left: 0;
+			  }
 
-			@media (max-width: 780px){
-
-			#navigation {
-			    font-size: 14px;
+			  .container-form {
+				width: 85%;}
 				}
-			}
-
-			@media (max-width: 750px){
-
-			#navigation {
-			    font-size: 13px;
-				}
-			}
-
-			@media (max-width: 720px){
-
-			#navigation {
-			    font-size: 12px;
-				}
-			.container-form {
-			width: 80%;}
 			}
 
 			@media (max-width: 700px){
 
-			#navigation {
-			    font-size: 11px;
-				}
-
 			p {
-				font-size: 12px;
+				font-size: 11px;
 				}
 			}
 
 			@media (max-width: 600px){
-
-			#navigation {
-			    font-size: 10px;
-				}
 
 			#bottoneasporto ul li a {
 				padding:0.5em 0.7em;
@@ -691,24 +713,21 @@
 			#bottonigriglialung ul li a {
 				padding:0.5em 0.7em;
 				font-size: 15px;
-				border: 1px #FFFFFF solid
+				border: 1px #A8C67C solid
 				}
-
-			p {
-				font-size: 11px;
-				}
+			}
 
 			@media (max-width: 550px){
-
-			#navigation {
-			    font-size: 9px;
-				}
 
 			#bottonigriglia ul li a {
 				padding:0.5em 0.7em;
 				font-size: 13px;
 				border: 1px #A8C67C solid
 				}
+
+				.container-form {
+			width: 95%;
+			}
 			
 
 			#bottonigriglialung ul li a {
@@ -724,14 +743,6 @@
 				border: 1px #A8C67C solid
 				}
 			
-			
-			}
-
-			@media (max-width: 530px){
-
-			#navigation {
-			    font-size: 8px;
-				}
 			}
 
 /*CAMBIAMENTI RIDUZIONI GRIGLIA FINALE*/
@@ -748,7 +759,11 @@
 			}
 
 			.container-form {
-			width: 90%;
+			width: 95%;
+			}
+			input,select {
+				padding: 10px 5px;
+				border: 2px #A8C67C solid;
 			}
 			}
 
@@ -759,15 +774,15 @@
 
 @media (max-width: 490px){
 
-			#navigation {
-			    font-size: 6px;
-				}
+			nav ul li{
+			    display: block;
+			    margin: 50px 0;
+			    line-height: 8px;
+			  }
 
-			.immnav{ 
-			width: 38px; 
-			height: 33px;
-
-			}
+			nav ul li a{
+			    font-size: 20px;
+			  }
 
 			.griglia{
 				margin-right: 20px;
@@ -779,11 +794,10 @@
 				margin-right: 20px;
 				display: grid;
 				grid-template-columns: 40% 60%;
-
 			}
 
 			input,select {
-				padding: 10px 10px;
+				padding: 10px 0px;
 			}
 
 			.heading {
@@ -820,6 +834,4 @@
 			.frasecit {
 				font-size: 20px;
 			}
-
-
 		}

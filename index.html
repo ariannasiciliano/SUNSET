@@ -2,6 +2,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
+
+	<!-- AGGIUNTA PER NAV BAR-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
 	<title>Sunset</title>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,21 +19,25 @@
 
 <!-- Logo -->
 <div>
-			<p class="logo"> SUNSET </p>
+			<p class="sunset"> SUNSET </p>
 			<p class="sottotitolo"> <strong> The seaside restaurant </strong></p>
 </div>
 <!-- Nav -->
-<div id="navigation">
-  <ul>
-    <li><a href="index.html" title="Home">HOME</a></li>
-    <li><a href="menu.html" title="Appetizer">APPETIZER</a></li>
-    <li><a href="beverages.html" title="Beverages">BEVERAGES</a></li>
-    <li id="logoimm"><img class="immnav" src="img/logo.png"></li>
-    <li><a href="findus.html" title="Find us">FIND US</a></li>
-    <li><a href="reservation.html" title="Reservation">RESERVATION</a></li>
-    <li><a href="events.html" title="Events">EVENTS</a></li>
-  </ul>
-</div>
+<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="index.html" title="Home">HOME</a></li>
+        <li><a href="menu.html" title="Appetizer">APPETIZER</a></li>
+        <li><a href="beverages.html" title="Beverages">BEVERAGES</a></li>
+        <li id="logoimm"><img class="immnav" src="img/logo.png"></li>
+        <li><a href="findus.html" title="Find us">FIND US</a></li>
+        <li><a href="reservation.html" title="Reservation">RESERVATION</a></li>
+        <li><a href="events.html" title="Events">EVENTS</a></li>
+      </ul>
+    </nav>
 
 
 <!-- Header -->
@@ -36,13 +45,14 @@
 	</header>
 
 <!-- Griglia -->
-<section>
+<div>
 <div class="griglia">
 
 	<div class="tripla">
  		<div class="grigliapic">
- 			<p style="margin-top: 0px;"> BEACH RESTAURANT <br>
-			<h3 style="color: #A8C67C; margin-top: -20px;margin-bottom: -20px;font-weight: 300;"> <strong> Our strengths </strong></h3>
+ 			<br>
+ 			<p style="margin-top: 0px;"> BEACH RESTAURANT
+			<h3 style="color: #A8C67C; margin-top: -10px; margin-bottom: -10px; font-weight: 300;"> <strong> Our strengths </strong> </h3>
 			Overlooking the sea, a spectacular landscape with feet in sand, it offers a delicious and refined cuisine with delicious sushi and many other healthy dishes combined with a breathtaking view.
 			<div id="bottonigriglia">
 				<ul><li><a href="findus.html" title="Find us">FIND US</a></li></ul>
@@ -55,11 +65,11 @@
 
 	<div class="tripla">
 		<div class="grigliapic">
-
+			<br>
 			<img class="responsivemen" src="img/barnotte2.jpg"> 
 			<img class="responsivemen" src="img/pesce.jpg"> 
 			<p style="margin-top: 0px;">SUNSET NEWS <br>
-			<h3 style="color: #A8C67C; margin-top: -20px;margin-bottom: -20px;font-weight: 300;"> <strong> Only fresh fish </strong></h3>
+			<h3 style="color: #A8C67C; margin-top: -10px; margin-bottom: -10px; font-weight: 300;"> <strong> Only fresh fish </strong></h3>
 			Fresh fish and vegetables every day. Sunset gives you only healthy and genuine things. Trust us!
 			<div id="bottonigriglialung">
 				<ul><li><a href="menu.html" title="See our menù">SEE OUR MENÙ</a></li></ul>
@@ -68,14 +78,14 @@
 		</div>
 	</div>
 
-</section>
+</div>
 
 <!-- Asporto -->
-<section id="boxasporto">
+<div id="boxasporto">
 	<div class="griglia">
 
 		<div class="tripla">
-			<p style="color:white;text-align: right;font-size: 25px;">GREENS JUST GOT FASTER!</p>
+			<p style="color:white;text-align: right;font-size: 25px; margin-top: 25px;">GREENS JUST GOT FASTER!</p>
 			<div id="bottoneasporto">
 				<ul><li><a href="https://deliveroo.it/it?utm_source=google&utm_medium=cpc&utm_term=deliveroo&utm_campaign=%2A%2A%5EAcquisition%5ESearch%5EBrand%5EItaly%5EAll%20Cities%5E%5EExact%5EAPI%5E%5E%5E%5E%5EIT%5EStrategic%5ENon-Mobile%5E£10274500698&utm_loc=1008250&utm_device=c&utm_adposition=&utm_network=g&utm_targetid=kwd-52577441545&gclid=EAIaIQobChMIhJv6gN7J7wIVmYbVCh2JpgGSEAAYASAAEgJTJ_D_BwE&gclsrc=aw.ds" title="Order online">ORDER ONLINE</a></li></ul>
 			</div>
@@ -85,7 +95,7 @@
 			<img style="padding-top: 30px;" class="responsive" src="img/biciasporto.png">
 		</div>
 	</div>
-</section>
+</div>
 
 <!-- Frase -->
 <div>
@@ -99,7 +109,7 @@ Eating intelligently is an art. </p>
 		<div class="tripla">
 			
 		
-		<p style="color:white;font-size: 30px;">Reserve your table</p>
+		<p style="color:white;font-size: 30px;margin-top: 10px;">Reserve your table</p>
 			<div id="navigationriservation">
 			<ul><li><a href="reservation.html" title="Reservation">Reservation</a></li></ul>
 			</div>
@@ -108,7 +118,7 @@ Eating intelligently is an art. </p>
 	</header>
 
 <!-- Finale -->
-<section id="boxfinale">
+<div id="boxfinale">
 	<p style="color:#A8C67C; text-align: center; font-size: 30px;"><br>Hungry?</p>
 
 	<div class="grigliafinale">
@@ -125,10 +135,7 @@ Eating intelligently is an art. </p>
 			<p style="color:#A8C67C; text-align: center; margin-top: 0px;; font-size: 12px;">Tel: +1 786-975-2550<br>Email: sunset@1.com</p> <br>	
 		</div>
 	</div>
-</section>
-
-
-
+</div>
 
 </body>
 </html>

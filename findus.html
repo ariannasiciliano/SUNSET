@@ -4,6 +4,10 @@
 	<meta charset="utf-8">
 	<title>Sunset</title>
 
+	<!-- AGGIUNTA PER NAV BAR-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 
@@ -14,22 +18,26 @@
 
 <!-- Logo -->
 <div>
-			<p class="logo"> SUNSET </p>
+			<p class="sunset"> SUNSET </p>
 			<p class="sottotitolo"> <strong> The seaside restaurant </strong></p>
 </div>
 
 <!-- Nav -->
-<div id="navigation">
-  <ul>
-    <li><a href="index.html" title="Home">HOME</a></li>
-    <li><a href="menu.html" title="Appetizer">APPETIZER</a></li>
-    <li><a href="beverages.html" title="Beverages">BEVERAGES</a></li>
-    <li id="logoimm"><img class="immnav" src="img/logo.png"></li>
-    <li><a href="findus.html" title="Find us">FIND US</a></li>
-    <li><a href="reservation.html" title="Reservation">RESERVATION</a></li>
-    <li><a href="events.html" title="Events">EVENTS</a></li>
-  </ul>
-</div>
+<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="index.html" title="Home">HOME</a></li>
+        <li><a href="menu.html" title="Appetizer">APPETIZER</a></li>
+        <li><a href="beverages.html" title="Beverages">BEVERAGES</a></li>
+        <li id="logoimm"><img class="immnav" src="img/logo.png"></li>
+        <li><a href="findus.html" title="Find us">FIND US</a></li>
+        <li><a href="reservation.html" title="Reservation">RESERVATION</a></li>
+        <li><a href="events.html" title="Events">EVENTS</a></li>
+      </ul>
+    </nav>
 
 
 <!-- Header -->
@@ -37,14 +45,14 @@
 	</header>
 
 <!-- Griglia -->
-		<p class="titolo" style="color:#A8C67C;font-size: 30px;">Location & Hours</p>
+<p class="titolo" style="color:#A8C67C;font-size: 30px;margin-bottom: 25px;">Location & Hours</p>
 
 <div class="griglia">
 	<div class="tripla">
 			<p style="margin-top: 0px;">5OO Terry Francois Street <br>
 				San Francisco, CA 94158 <br> <br>
 				<strong style="color: #A8C67C;"> Open </strong> Monday to Sunday <br>
-				<strong style="color: #A8C67C;"> Hours </strong> 12pm to 11pm <br> <br> <br>
+				<strong style="color: #A8C67C;"> Hours </strong> 12pm to 11pm <br> <br> 
 
 				We’d love to hear from you!</p> 
 					<form action="#" class="contact-form">
@@ -61,15 +69,10 @@
 	<div class="tripla"> 
 		<iframe class="responsivemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8366175216806!2d-122.38862638488048!3d37.77042897976029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc6f954a80b%3A0x1ad35e22f9e507f7!2sTerry%20A%20Francois%20Blvd%2C%20San%20Francisco%2C%20CA%2094158%2C%20Stati%20Uniti!5e0!3m2!1sit!2sit!4v1617963661128!5m2!1sit!2sit" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 	</div>
-
-
-
 </div>
 
-
-
 <!-- Finale -->
-<section id="boxfinale">
+<div id="boxfinale">
 	<p style="color:#A8C67C; text-align: center; font-size: 30px;"><br>Hungry?</p>
 
 	<div class="grigliafinale">
@@ -86,7 +89,7 @@
 			<p style="color:#A8C67C; text-align: center; margin-top: 0px;; font-size: 12px;">Tel: +1 786-975-2550<br>Email: sunset@1.com</p> <br>	
 		</div>
 	</div>
-</section>
+</div>
 
 
 
