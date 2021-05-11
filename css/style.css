@@ -493,6 +493,7 @@
 			#bottonefindus {
 			    padding-top:8px;
 			    margin-bottom: 25px;
+			    cursor: pointer;
 			}
 
 			#bottonefindus ul {
@@ -653,16 +654,30 @@
 /*CAMBIAMENTI RIDUZIONI NAV*/
 			@media (max-width: 952px){
 			  nav ul li a{
-			    font-size: 16px;
-			  }
+			    font-size: 16px;}
+
+			   .container-form{
+				width: 80%;}
 			}
+
 			@media (max-width: 800px){
-			  .checkbtn{
-			    display: block;
-			  }
 			  nav ul li a{
-			  color: white;
+			    font-size: 13px;}
 			}
+
+			@media (max-width: 700px){
+
+			.testoreservation {
+				font-size: 12px;}
+			}
+
+			@media (max-width: 650px){
+			  .checkbtn{
+			    display: block;}
+
+			  nav ul li a{
+			  color: white;}
+
 			  nav ul{
 			    position: fixed;
 			    width: 100%;
@@ -672,77 +687,59 @@
 			    top: 160px;
 			    left: -100%;
 			    text-align: center;
-			    transition: all .5s;
-			  }
+			    transition: all .5s;}
+
 			  nav ul li{
 			    display: block;
 			    margin: 50px 0;
-			    line-height: 22px;
-			  }
+			    line-height: 22px;}
+
 			  nav ul li a{
-			    font-size: 20px;
-			  }
+			    font-size: 20px;}
+
 			  a:hover,a.active{
 			    background: white;
-			    color: #A8C67C;
-			  }
+			    color: #A8C67C;}
+
 			  #check:checked ~ ul{
-			    left: 0;
-			  }
+			    left: 0;}
 
-			  .container-form {
-				width: 85%;}
-				}
-			}
-
-			@media (max-width: 700px){
-
-			p {
-				font-size: 11px;
-				}
+			  .container-form{
+				width: 85%;}	
 			}
 
 			@media (max-width: 600px){
 
-			#bottoneasporto ul li a {
+			#bottoneasporto ul li a{
 				padding:0.5em 0.7em;
 				font-size: 15px;
-				border: 1px #A8C67C solid
-				}
+				border: 1px #A8C67C solid}
 
-			#bottonigriglialung ul li a {
+			#bottonigriglialung ul li a{
 				padding:0.5em 0.7em;
 				font-size: 15px;
-				border: 1px #A8C67C solid
-				}
+				border: 1px #A8C67C solid}
 			}
 
 			@media (max-width: 550px){
 
-			#bottonigriglia ul li a {
+			#bottonigriglia ul li a{
 				padding:0.5em 0.7em;
 				font-size: 13px;
-				border: 1px #A8C67C solid
-				}
+				border: 1px #A8C67C solid}
 
-				.container-form {
-			width: 95%;
-			}
+				.container-form{
+				width: 95%;}
 			
-
-			#bottonigriglialung ul li a {
+			#bottonigriglialung ul li a{
 				padding:0.5em 0.7em;
 				font-size: 13px;
-				border: 1px #A8C67C solid
-				}
-			
+				border: 1px #A8C67C solid}
 
-			#bottoneasporto ul li a {
+			#bottoneasporto ul li a{
 				padding:0.5em 0.7em;
 				font-size: 13px;
-				border: 1px #A8C67C solid
-				}
-			
+				border: 1px #A8C67C solid}
 			}
 
 /*CAMBIAMENTI RIDUZIONI GRIGLIA FINALE*/
@@ -751,87 +748,72 @@
 
 			.grigliafinale{
 				max-width: initial;
-				display: block;
-				
-			}
+				display: block;}
+
 			.cellafinale{
-				margin-bottom: 1em;
-			}
+				margin-bottom: 1em;}
 
-			.container-form {
-			width: 95%;
-			}
-			input,select {
+			.container-form{
+				width: 95%;}
+
+			input,select{
 				padding: 10px 5px;
-				border: 2px #A8C67C solid;
+				border: 2px #A8C67C solid;}
 			}
-			}
-
-
 /*___________________________________________________*/
 
 /*CAMBIAMENTI RIDUZIONI PER CELL*/
 
-@media (max-width: 490px){
+			@media (max-width: 490px){
 
 			nav ul li{
 			    display: block;
 			    margin: 50px 0;
-			    line-height: 8px;
-			  }
+			    line-height: 8px;}
 
 			nav ul li a{
-			    font-size: 20px;
-			  }
+			    font-size: 20px;}
 
 			.griglia{
 				margin-right: 20px;
-				margin-left: 20px;
-			}
+				margin-left: 20px;}
 
-			.container {
+			.container{
 				margin-left: 20px;
 				margin-right: 20px;
 				display: grid;
-				grid-template-columns: 40% 60%;
-			}
+				grid-template-columns: 40% 60%;}
 
-			input,select {
-				padding: 10px 0px;
-			}
+			input,select{
+				padding: 10px 0px;}
 
-			.heading {
-				font-size: 25px;
-			}
+			.heading{
+				font-size: 25px;}
 
-			.heading-days {
-				font-size: 10px;
-			}
+			.heading-days{
+				font-size: 10px;}
 
-			.heading-phone {
-				font-size: 10px;
-			}
+			.heading-phone{
+				font-size: 10px;}
 
 			.showcaseindex{
-				height: 150px;
-			}
-			.showcasebeverages{
-				height: 150px;
-			}
-			.showcasevents{
-				height: 150px;
-			}
-			.showcasefindus{
-				height: 150px;
-			}
-			.showcasemenu{
-				height: 150px;
-			}
-			.showcasereservation{
-				height: 150px;
-			}
+				height: 250px;}
 
-			.frasecit {
-				font-size: 20px;
-			}
+			.showcasebeverages{
+				height: 250px;}
+
+			.showcasevents{
+				height: 250px;}
+
+			.showcasefindus{
+				height: 250px;}
+
+			.showcasemenu{
+				height: 250px;}
+
+			.showcasereservation{
+				height: 250px;}
+
+			.frasecit{
+				font-size: 20px;}
 		}
